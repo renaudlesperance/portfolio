@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { HashRouter as Router, Routes,Route,Link} from 'react-router-dom'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 // import { useNavigate } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/home/Home.js"
 // import GreenHouseMap from "./components/greenhousemap/GreenHouseMap.js"
 // import Dashboard from "./components/dashboard/Dashboard.js"

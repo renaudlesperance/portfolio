@@ -6,7 +6,7 @@ import {Card, Row, Col, ButtonGroup, Button ,ToggleButtonGroup,ToggleButton} fro
 
 import content from '../../content/content.json'
 import { AppContext } from "../../App.js";
-
+import avatar from "../../Images/avatar.png"
 
 function Home() {
   const language = useContext(AppContext)
@@ -14,7 +14,35 @@ function Home() {
   return (
 <div>
 
-<a>{content.navbar.home[language]}</a>
+<Row>
+  <Col>
+  <img src={avatar} alt="Logo" width="200" />
+  </Col>
+  <Col>
+    <Row>
+      <Col>Renaud Lespérance</Col>
+    </Row>
+    <Row>
+      <Col>Mail</Col>
+      <Col>Linkin</Col>
+      <Col>GitHub</Col>
+      <Col>Instagram</Col>
+    </Row>
+  </Col>
+</Row>
+
+<Row>
+  <Col>
+  <a>{content.navbar.home[language]}</a>
+  </Col>
+  <Col>
+  <a>{content.navbar.home[language]}</a>
+  </Col>
+  <Col>
+  <a>{content.navbar.home[language]}</a>
+  </Col>
+</Row>
+
 
 </div>
 

@@ -1,0 +1,11 @@
+{
+  "navbar" : {
+    "home" : {"fr": "Accueil", "en" : "Home"},
+    "projects" : {"fr": "Projets", "en" : "Projects"},
+    "experience" : {"fr": "Expérience", "en" : "Experience"},
+    "contact" : {"fr": "Contact", "en" : "Contact"},
+	"language" : {"fr": "Langues", "en" : "Languages"},
+	"languageEN" : {"fr": "Anglais" , "en" : "English"},
+	"languageFR" : {"fr": "Français" , "en" : "French"}
+  }
+}

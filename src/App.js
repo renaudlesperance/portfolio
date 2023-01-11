@@ -9,6 +9,7 @@ import Home from "./components/home/Home.js"
 import Projects from "./components/projects/Projects.js"
 import Education from "./components/education/Education.js"
 import Experience from "./components/experience/Experience.js"
+import Icons from "./components/icons/Icons.js"
 import PageNotFound from "./components/pagenotfound/PageNotFound.js"
 import avatar from "./Images/avatar.png"
 
@@ -56,9 +57,18 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />}/>
         <Route path="/education" element={<Education />} />
+        <Route path="/iconCopyright" element={<Icons />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes></Router>
 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-bottom" fixed="bottom">
+        <div class="container-fluid">
+          © Copyright 2022. All Rights Reserved.
+          <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <a class="nav-link active" aria-current="page" href={"/#/iconCopyright"}>{content.navbar.iconCopy[language]}</a>
+          </ul>
+        </div>
+      </nav>
     </div>
     </AppContext.Provider>
   );

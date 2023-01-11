@@ -4,9 +4,18 @@
     "projects" : {"fr": "Projets", "en" : "Projects"},
     "experience" : {"fr": "Expérience", "en" : "Experience"},
     "contact" : {"fr": "Contact", "en" : "Contact"},
-	"education" : {"fr": "Formation", "en" : "Education"},
-	"language" : {"fr": "Langues", "en" : "Languages"},
-	"languageEN" : {"fr": "Anglais" , "en" : "English"},
-	"languageFR" : {"fr": "Français" , "en" : "French"}
+    "education" : {"fr": "Formation", "en" : "Education"},
+    "iconCopy" : {"fr": "Droits d'auteur des icônes" , "en" : "Icons copyright"},
+    "language" : {"fr": "Langues", "en" : "Languages"},
+    "languageEN" : {"fr": "Anglais" , "en" : "English"},
+    "languageFR" : {"fr": "Français" , "en" : "French"}
+  },
+  "Home" : {
+    "education" : {
+      "College": {"fr": "Diplôme d'études collégiales en sciences de la nature", "en" : "College diploma in natural sciences"},
+      "BAC": {"fr": "Baccalauréat en Génie électrique", "en" : "Bachelor in electrical engineering"},
+      "Master": {"fr": "Maitrise professionnelle en Génie électrique", "en" : "Professional master in electrical engineering"}
+    }
   }
+
 }

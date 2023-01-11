@@ -3,7 +3,6 @@ import Alert from 'react-bootstrap/Alert';
 import styles from './Home.module.css';
 import React, { useState,useEffect,useContext} from 'react'; 
 import {Card, Row, Col, ButtonGroup, Button ,ToggleButtonGroup,ToggleButton} from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import CustomContainer from '../customContainer/CustomContainer.js'
 import ClickableContainer from '../clickableContainer/ClickableContainer';
@@ -17,6 +16,8 @@ import linkedin from "../../Images/linkedin.png"
 import graduation from "../../Images/graduation.png"
 import gear from "../../Images/gear.png"
 import experience from "../../Images/experience.png"
+import diploma from "../../Images/diploma.png"
+import certificate from "../../Images/certificate.png"
 
 function ExperienceCard () {
   const language = useContext(AppContext)
@@ -26,8 +27,10 @@ function ExperienceCard () {
         <span>{content.navbar.experience[language]}</span>
         <img src={experience} alt="e" width="30"/> 
       </Card.Header>
-      <Card.Body>
-        Cliquez ici pour visualiser vos caméras.
+      <Card.Body className={styles.cardContent}>
+      <p><img src={diploma} alt="e" width="30"/> {content.Home.education.Master[language]} </p>
+      <p><img src={diploma} alt="e" width="30"/> {content.Home.education.Master[language]} </p>
+      <p><img src={diploma} alt="e" width="30"/> {content.Home.education.Master[language]} </p>
       </Card.Body>
     </Card>
   );
@@ -41,8 +44,10 @@ function EducationCard () {
         <span>{content.navbar.education[language]}</span>
         <img src={graduation} alt="e" width="30"/> 
       </Card.Header>
-      <Card.Body>
-        Cliquez ici pour visualiser vos caméras.
+      <Card.Body className={styles.cardContent}>
+        <p><img src={diploma} alt="e" width="30"/> {content.Home.education.Master[language]} </p>
+        <p><img src={diploma} alt="e" width="30"/> {content.Home.education.BAC[language]} </p>
+        <p><img src={diploma} alt="e" width="30"/> {content.Home.education.College[language]} </p>
       </Card.Body>
     </Card>
   );
@@ -56,8 +61,8 @@ function ProjectsCard () {
         <span>{content.navbar.projects[language]}</span>
         <img src={gear} alt="e" width="30"/> 
       </Card.Header>
-      <Card.Body>
-        Cliquez ici pour visualiser vos caméras.
+      <Card.Body className={styles.cardContent}>
+      <p><img src={diploma} alt="e" width="30"/> {content.Home.education.Master[language]} </p>
       </Card.Body>
     </Card>
   );
@@ -106,11 +111,16 @@ function Home() {
         <EducationCard/>
       </ClickableContainer>
     </Col>
-    <Col>
-      <ClickableContainer onClick={() => navigate(`/projects`)}>      
-        <ProjectsCard/>
-      </ClickableContainer>
-    </Col>
+</Row>
+</div>
+
+<div className={styles.secondRow}>
+<Row>
+  <Col>
+    <ClickableContainer onClick={() => navigate(`/projects`)}>      
+      <ProjectsCard/>
+    </ClickableContainer>
+  </Col>
 </Row>
 </div>
 

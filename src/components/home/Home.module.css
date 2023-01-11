@@ -30,6 +30,8 @@
 .secondRow {
   /* display: flex; */
   justify-content: space-between;
+  margin-bottom: 2rem;
+
   /* background-color: #f8f9fa; */
 }
 
@@ -41,4 +43,14 @@
 .colContainer {
   display: flex;
   justify-content: space-between;
+  /* vertical-align: left;
+  text-align: left;
+  align-items: left;
+  align-content: left; */
+
+}
+
+.cardContent{
+  display: inline-block;
+  text-align: left;
 }

@@ -47,3 +47,9 @@
   font-weight: 500;
   padding: 25px;
 }
+
+.App-footer{
+  position:fixed;
+  bottom:10px;
+  width:100%;
+}

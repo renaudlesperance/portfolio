@@ -61,12 +61,12 @@ function App() {
         <Route path='*' element={<PageNotFound />} />
       </Routes></Router>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-bottom" fixed="bottom">
+      <nav class="App-footer">
         <div class="container-fluid">
-          © Copyright 2022. All Rights Reserved.
-          <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-              <a class="nav-link active" aria-current="page" href={"/#/iconCopyright"}>{content.navbar.iconCopy[language]}</a>
-          </ul>
+        <a>Copyright © 2022 Renaud Lespérance | All Rights Reserved.</a> <a class="nav-link active" aria-current="page" href={"/#/iconCopyright"}>{content.navbar.iconCopy[language]}</a>
+          {/* <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+          <a>© Copyright 2022. All Rights Reserved.</a> <a class="nav-link active" aria-current="page" href={"/#/iconCopyright"}>{content.navbar.iconCopy[language]}</a>
+          </ul> */}
         </div>
       </nav>
     </div>

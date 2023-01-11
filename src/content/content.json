@@ -5,7 +5,7 @@
     "experience" : {"fr": "Expérience", "en" : "Experience"},
     "contact" : {"fr": "Contact", "en" : "Contact"},
     "education" : {"fr": "Formation", "en" : "Education"},
-    "iconCopy" : {"fr": "Droits d'auteur des icônes" , "en" : "Icons copyright"},
+    "iconCopy" : {"fr": "Voir les droits d'auteur des icônes →" , "en" : "See icons copyright →"},
     "language" : {"fr": "Langues", "en" : "Languages"},
     "languageEN" : {"fr": "Anglais" , "en" : "English"},
     "languageFR" : {"fr": "Français" , "en" : "French"}

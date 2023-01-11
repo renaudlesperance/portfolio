@@ -83,18 +83,12 @@ function Home() {
     <Col>
       <Row>
       <div className={styles.titleDashboard}><a>Renaud Lespérance</a></div>
-        {/* <Col>
-          <div className={styles.titleDashboard}><h1>Renaud Lespérance</h1></div>
-        </Col> */}
       </Row>
       <Row className={styles.contactLink}>
         <Col><a href='mailto:renaudlesperance@outlook.com' target="_blank"><img src={email} alt="email" width="45"  /></a></Col>
         <Col><a href='https://www.linkedin.com/in/renaud-lesp%C3%A9rance-737b0b152/' target="_blank"><img src={linkedin} alt="linkedin" width="45"  /></a></Col>
         <Col><a href='https://github.com/renaudlesperance' target="_blank"><img src={GitHub} alt="GitHub" width="45"  /></a></Col>
         <Col><a href='https://www.instagram.com/renaudlesperance/' target="_blank"><img src={instagram} alt="instagram" width="45"  /></a></Col>
-        {/* <Col><img src={linkedin} alt="linkedin" width="45" /></Col>
-        <Col><img src={GitHub} alt="GitHub" width="45" /></Col>
-        <Col><img src={instagram} alt="instagram" width="45" /></Col> */}
       </Row>
     </Col>
   </Row>

@@ -17,24 +17,25 @@ const AppContext = React.createContext();
 
 function App() {
   const [language, setlanguage] = useState("fr")
-
   return (
     <AppContext.Provider value={language}>
     <div className="App">
-      <nav class="navbar navbar-expand-lg bg-light" fixed="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" fixed="top">
         <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            {/* Avatar */}
             <div class="navbar-brand">
               <img src={avatar} alt="Logo" width="45" />
+              <a> Renaud Lespérance </a>
             </div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"> <a class="navbar-brand" href={"/#/home"}>Renaud Lespérance</a></li>
+            {/* Navbar */}
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
               <a class="nav-link active" aria-current="page" href={"/#/home"}>{content.navbar.home[language]}</a>
               <a class="nav-link active" aria-current="page" href={"/#/projects"}>{content.navbar.projects[language]}</a>
               <a class="nav-link active" aria-current="page" href={"/#/experience"}>{content.navbar.experience[language]}</a>
               <a class="nav-link active" aria-current="page" href={"/#/contact"}>{content.navbar.contact[language]}</a>
             </ul>
-
+            {/* Language selection */}
             <div class="dropdown">
               <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
               {content.navbar.language[language]}
@@ -44,6 +45,7 @@ function App() {
                 <a class="dropdown-item"  onClick={() => setlanguage("en")} >{content.navbar.languageEN[language]}</a>
               </div>
             </div>
+
           </div>
         </div>
       </nav>

@@ -33,7 +33,7 @@ function App() {
               <a class="nav-link active" aria-current="page" href={"/#/home"}>{content.navbar.home[language]}</a>
               <a class="nav-link active" aria-current="page" href={"/#/projects"}>{content.navbar.projects[language]}</a>
               <a class="nav-link active" aria-current="page" href={"/#/experience"}>{content.navbar.experience[language]}</a>
-              <a class="nav-link active" aria-current="page" href={"/#/contact"}>{content.navbar.contact[language]}</a>
+              {/* <a class="nav-link active" aria-current="page" href={"/#/contact"}>{content.navbar.contact[language]}</a> */}
             </ul>
             {/* Language selection */}
             <div class="dropdown">
@@ -55,7 +55,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />}/>
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path='*' element={<PageNotFound />} />
       </Routes></Router>
 

@@ -57,11 +57,11 @@ function Home() {
         <a>{content.navbar.experience[language]}</a>
       </ClickableContainer>
     </Col>
-    <Col>
+    {/* <Col>
       <ClickableContainer onClick={() => navigate(`/contact`)}>      
         <a>{content.navbar.contact[language]}</a>
       </ClickableContainer>
-    </Col>
+    </Col> */}
 </Row>
 </div>
 

@@ -3,6 +3,7 @@ import Alert from 'react-bootstrap/Alert';
 import styles from './Home.module.css';
 import React, { useState,useEffect,useContext} from 'react'; 
 import {Card, Row, Col, ButtonGroup, Button ,ToggleButtonGroup,ToggleButton} from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import CustomContainer from '../customContainer/CustomContainer.js'
 import ClickableContainer from '../clickableContainer/ClickableContainer';
@@ -13,6 +14,54 @@ import email from "../../Images/email.png"
 import GitHub from "../../Images/github.png"
 import instagram from "../../Images/instagram.png"
 import linkedin from "../../Images/linkedin.png"
+import graduation from "../../Images/graduation.png"
+import gear from "../../Images/gear.png"
+import experience from "../../Images/experience.png"
+
+function ExperienceCard () {
+  const language = useContext(AppContext)
+  return (
+    <Card>
+      <Card.Header as="h5" className={styles.colContainer}>
+        <span>{content.navbar.experience[language]}</span>
+        <img src={experience} alt="e" width="30"/> 
+      </Card.Header>
+      <Card.Body>
+        Cliquez ici pour visualiser vos caméras.
+      </Card.Body>
+    </Card>
+  );
+};
+
+function EducationCard () {
+  const language = useContext(AppContext)
+  return (
+    <Card>
+      <Card.Header as="h5" className={styles.colContainer}>
+        <span>{content.navbar.education[language]}</span>
+        <img src={graduation} alt="e" width="30"/> 
+      </Card.Header>
+      <Card.Body>
+        Cliquez ici pour visualiser vos caméras.
+      </Card.Body>
+    </Card>
+  );
+};
+
+function ProjectsCard () {
+  const language = useContext(AppContext)
+  return (
+    <Card>
+      <Card.Header as="h5" className={styles.colContainer}>
+        <span>{content.navbar.projects[language]}</span>
+        <img src={gear} alt="e" width="30"/> 
+      </Card.Header>
+      <Card.Body>
+        Cliquez ici pour visualiser vos caméras.
+      </Card.Body>
+    </Card>
+  );
+};
 
 function Home() {
   const language = useContext(AppContext)
@@ -48,20 +97,20 @@ function Home() {
 <div className={styles.secondRow}>
 <Row>
     <Col>
-      <ClickableContainer onClick={() => navigate(`/projects`)}>      
-        <a>{content.navbar.projects[language]}</a>
+      <ClickableContainer onClick={() => navigate(`/experience`)}>      
+        <ExperienceCard/>
       </ClickableContainer>
     </Col>
     <Col>
-      <ClickableContainer onClick={() => navigate(`/experience`)}>      
-        <a>{content.navbar.experience[language]}</a>
+      <ClickableContainer onClick={() => navigate(`/education`)}>      
+        <EducationCard/>
       </ClickableContainer>
     </Col>
-    {/* <Col>
-      <ClickableContainer onClick={() => navigate(`/contact`)}>      
-        <a>{content.navbar.contact[language]}</a>
+    <Col>
+      <ClickableContainer onClick={() => navigate(`/projects`)}>      
+        <ProjectsCard/>
       </ClickableContainer>
-    </Col> */}
+    </Col>
 </Row>
 </div>
 
